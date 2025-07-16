@@ -30,7 +30,7 @@
         font-size: 0.95rem;
     }
     
-    /* Responsividade */
+
     @media (max-width: 768px) {
         .footer-content {
         flex-direction: column;
