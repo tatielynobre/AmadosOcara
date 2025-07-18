@@ -1,16 +1,17 @@
 
 import './App.css'
 import Footer from './components/footer/Footer';
+import NavBar from './components/navBar/navBar';
 
 function App() {
   return (
     <>
+    <NavBar />
       <div className="app-content">
-        <h1>Welcome to Amados</h1>
-        <p>Quem somos?</p>
         {/* Aqui vai o conteúdo da página */}
       </div>
 
+      
       <Footer />
     </>
   );
