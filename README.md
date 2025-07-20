@@ -1,12 +1,32 @@
-# React + Vite
+# 🐾 Amados Ocara
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Amados Ocara** é um projeto colaborativo desenvolvido por estudantes com o objetivo de criar uma plataforma dedicada à **adoção de animais**, promovendo o cuidado, acolhimento e a conscientização sobre o bem-estar animal.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Índice
 
-## Expanding the ESLint configuration
+- [📖 Sobre o Projeto](#-sobre-o-projeto)
+- [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [💻 Como Rodar o Projeto Localmente](#-como-rodar-o-projeto-localmente)
+- [🌱 Contribuindo com o Projeto](#-contribuindo-com-o-projeto)
+- [🧠 Padrão de Commits](#-padrão-de-commits)
+- [👩‍💻 Time de Desenvolvimento](#-time-de-desenvolvimento)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📖 Sobre o Projeto
+
+A plataforma tem como foco facilitar a conexão entre pessoas que desejam adotar animais e organizações que promovem o resgate e acolhimento. O site contará com páginas informativas, formulários de adoção, galeria de animais disponíveis e conteúdos educativos voltados para o cuidado animal.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **React.js** (Frontend)
+- **JavaScript (ES6+)**
+- **HTML5 + CSS3**
+- **Git e GitHub** (controle de versão)
+- **Figma** (protótipo de interface)
+
+---
