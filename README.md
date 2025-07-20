@@ -17,7 +17,7 @@
 
 ## 📖 Sobre o Projeto
 
-A plataforma tem como foco facilitar a conexão entre pessoas que desejam adotar animais e organizações que promovem o resgate e acolhimento. O site contará com páginas informativas, formulários de adoção, galeria de animais disponíveis e conteúdos educativos voltados para o cuidado animal.
+A plataforma tem como foco facilitar a conexão entre pessoas que desejam adotar animais e organizações que promovem o resgate e acolhimento. O site contará com páginas informativas, formulários de adoção, galeria de animais disponíveis e conteúdos educativos para o cuidado animal.
 
 ---
 
