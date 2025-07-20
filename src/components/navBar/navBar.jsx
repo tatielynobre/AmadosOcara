@@ -1,21 +1,24 @@
 import React from "react";
 import './navBar.css'; 
+import { Link } from 'react-router-dom';
 import logo from '../../assets/image.png';
 
 
 function NavBar() {
 return (
-    <nav className="navbar">
+<nav className="navbar">
+    <Link to="/">
         <img src={logo} alt="Amados Logo" className="navbar-logo" />
-        <ul className="nav-links">
-            <li><a href="#caminhohome">Quem somos</a></li>
-            <li><a href="#caminhoadote">Adote</a></li>
-            <li><a href="#caminhoparceiro">Parceiros</a></li>
-            <li><a href="#caminho">Artigos</a></li>
-            <li><a href="#caminho">Transparência</a></li>
-            <li><a href="#caminho" id="Doe">Doe</a></li>
-        </ul>
+    </Link>
+    <ul className="nav-links">
+        <li><Link to="/quem-somos">Quem somos</Link></li>
+        <li><Link to="/adote">Adote</Link></li>
+        <li><Link to="/parceiros">Parceiros</Link></li>
+        <li><Link to="/artigos">Artigos</Link></li>
+        <li><Link to="/transparencia">Transparência</Link></li>
+        <li><Link to="/doe" id="Doe">Doe</Link></li>
+    </ul>
     </nav>
-);
+    );
 }
 export default NavBar;
