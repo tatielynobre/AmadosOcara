@@ -7,8 +7,8 @@ const Amados = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
-        const fetchAnimais = async () => {
+useEffect(() => {
+    const fetchAnimais = async () => {
         try {
             setLoading(true);
             const data = await getAnimais();
@@ -21,41 +21,41 @@ const Amados = () => {
         } finally {
             setLoading(false);
         }
-        };
+    };
 
         fetchAnimais();
     }, []);
 
-    const handleSaibaMais = (animalId) => {
+const handleSaibaMais = (animalId) => {
         console.log(`Ver detalhes do animal ${animalId}`);
-    };
+};
 
-    const handleVerTodosAnimais = () => {
+const handleVerTodosAnimais = () => {
         console.log('Ver todos os animais disponíveis');
-    };
+};
 
-    if (loading) {
-        return (
+if (loading) {
+    return (
         <section className="amados">
             <div className="amados-container">
             <div className="loading">Carregando nossos amados...</div>
             </div>
         </section>
-        );
-    }
+    );
+}
 
-    if (error) {
-        return (
+if (error) {
+    return (
         <section className="amados">
             <div className="amados-container">
             <div className="error">{error}</div>
             </div>
         </section>
-        );
-    }
+    );
+}
 
-    return (
-        <section className="amados">
+return (
+    <section className="amados">
         <div className="amados-container">
             <h2 className="amados-titulo">Alguns dos Nossos Amados</h2>
             
@@ -79,7 +79,7 @@ const Amados = () => {
                     Saiba mais
                 </button>
                 </div>
-            ))}
+        ))}
             </div>
             
             <div className="amados-cta">

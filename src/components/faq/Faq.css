@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
 
 .faq {
     width: 100%;
@@ -14,12 +15,13 @@
     }
 
     .faq-titulo {
-    color: #8B0000;
+    color: #86000E;
     font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
+    font-weight: 500;
+    text-align: left;
     margin: 0 0 3rem 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Passion One', sans-serif;
+    padding-left: 3.5rem;
     }
 
     .faq-accordion {
@@ -31,7 +33,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     margin-bottom: 1rem;
-    background-color: #DDDDDD;
+    background-color: #EDEDED;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     }
@@ -58,13 +60,10 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #333333;
+    color: #C50011;
     transition: all 0.3s ease;
     }
 
-    .faq-pergunta:hover {
-    color: #8B0000;
-    }
 
     .faq-pergunta.active {
     color: #8B0000;
@@ -75,7 +74,6 @@
     width: 20px;
     height: 20px;
     color: #8B0000;
-    transition: transform 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +86,6 @@
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-top: 8px solid currentColor;
-    transition: transform 0.3s ease;
     }
 
     .faq-pergunta.active .faq-arrow::before {
@@ -99,7 +96,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
-    background-color: #DDDDDD;
+    background-color: #EDEDED;
     margin: 0;
     padding: 0 1.5rem;
     }
@@ -115,7 +112,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: #555555;
+    color: #C50011;
     }
 
 
