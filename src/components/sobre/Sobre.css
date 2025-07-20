@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+.sobre-nos {
+    width: 100%;
+    min-height: 600px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+}
+
+.sobre-nos-container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.logo-sobre-nos {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem;
+}
+
+.texto-sobre-nos {
+    width: 40%;
+    min-width: 280px;
+    padding: 1rem;
+}
+
+.texto-sobre-nos h2 {
+    color: #C50011;
+    font-family: 'Passion One', cursive;
+    font-weight: 400; 
+    font-size: 3.2rem;
+}
+
+.texto-sobre-nos p {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #C50011;
+    margin-bottom: 1.5rem;
+}
+
+.botao-sobre-nos {
+    width: 300px;
+    height: 40px;
+    background-color: #86000E;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao-sobre-nos:hover {
+    background-color: #a10000;
+}
+
+@media (max-width: 768px) {
+.sobre-nos-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.logo-sobre-nos, .texto-sobre-nos {
+    width: 100%;
+    }
+}  

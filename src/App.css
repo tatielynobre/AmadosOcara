@@ -1,4 +1,4 @@
-/* App.css */
+
 
 html, body {
   height: 100%;
@@ -12,14 +12,14 @@ html, body {
   min-height: 100vh;
 }
 
-/* Essa div vai envolver o conteúdo principal da página */
+
 .app-content {
   flex: 1;
   padding: 2rem;
   text-align: center;
 }
 
-/* Animações padrão do template */
+
 .logo {
   height: 6em;
   padding: 1.5em;
