@@ -2,12 +2,12 @@
 
 .sobre-nos {
     width: 100%;
-    min-height: 600px;
+    min-height: 350px; 
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 .sobre-nos-container {
@@ -16,14 +16,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 3rem; 
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 1rem; 
 }
 
 .logo-sobre-nos {
-    width: 100%;
-    max-width: 400px;
+    width: 70%;
+    max-width: 300px;
     height: auto;
     margin: 1rem;
 }
@@ -38,7 +38,7 @@
     color: #C50011;
     font-family: 'Passion One', cursive;
     font-weight: 400; 
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 .texto-sobre-nos p {
