@@ -1,14 +1,18 @@
-import Footer from '../components/footer/Footer';
-import NavBar from '../components/navBar/navBar';
+import NavBar from "../components/navBar/navBar";
+import ComoDoar from "../components/doe/comoDoar.jsx";
+import ContatoAjuda from "../components/doe/contatoAjuda.jsx";
+import DoacaoHeader from "../components/doe/doeHeader.jsx";
+import Footer from "../components/footer/Footer";
 
 function Doe() {
-    return (
+  return (
     <>
-        <NavBar />
-        <h1>OI AQUI É O DOE</h1>
-        <Footer />
+      <NavBar />
+      <DoacaoHeader />
+      <ComoDoar />
+      <ContatoAjuda />
+      <Footer />
     </>
-    );
+  );
 }
-
-export default Doe
+export default Doe;
