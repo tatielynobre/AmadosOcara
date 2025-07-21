@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+.transparencia-header h2 {
+    margin-top: 50px;
+    font-family: 'Passion One', sans-serif;
+    font-size: 3.0rem;
+    color: #8b0a10;
+    text-align: center;
+}
+
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 0 0 0;
+    align-items: center;
+}
+
+.filtro {
+    position: relative;
+    min-width: 320px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.filtro input {
+
+    padding-right: 32px;
+    font-size: 1.1rem;
+    color: #8b0a10;
+    background: transparent;
+    margin-left: 50px;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+}
+
+.filtro label {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #8b0a10;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.card {
+    background-color: #8b0a10;
+    border-radius: 12px;
+    width: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px #0001;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.card .pdfIcon {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff5e45;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 8px 24px;
+    border-radius: 8px;
+    z-index: 2;
+    font-family: 'Inter', sans-serif;
+}
+
+.card .docIcon {
+    width: 100px;
+    height: 120px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px #0002;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.card p {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    min-width: 350px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+
+}
+
+.modal .pdfIcon {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff5e45;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 8px 24px;
+    border-radius: 8px;
+    z-index: 2;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.modal .docIcon {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px #0002;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal h2 {
+    color: #8b0a10;
+    font-family: 'Passion One', sans-serif;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.modal p {
+    font-family: 'Inter', sans-serif;
+    color: #8b0a10;
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+.download {
+    background-color: #8b0a10;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 24px;
+    font-size: 1.1rem;
+}
+
+.close-x {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: #8b0a10;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  line-height: 1;
+}
+
+.modal-title {
+  font-family: 'Passion One', sans-serif;
+  color: #8b0a10;
+  font-size: 2.2rem;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+
+.pdfIcon-modal {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: #ff5e45;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 8px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0002;
+  font-family: 'Inter', sans-serif;
+}
+
+.modal-mes {
+  color: #8b0a10;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 24px 0 32px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.docIcon-modal {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+}
