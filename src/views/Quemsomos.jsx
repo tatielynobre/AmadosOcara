@@ -1,14 +1,14 @@
 import Footer from '../components/footer/Footer';
 import NavBar from '../components/navBar/navBar';
+import QuemSomos from '../components/quemsomos/QuemSomos';
 
-function Quemsomos() {
-    return (
+
+const QuemSomosView = () => (
     <>
         <NavBar />
-        <h1>OI AQUI É O QUEM SOMOS</h1>
+        <QuemSomos />
         <Footer />
     </>
-    );
-}
+)
 
-export default Quemsomos
+export default QuemSomosView;

@@ -8,7 +8,7 @@ function Footer() {
             <img src={logo} alt="Logo Amados" className="footer-logo" />
 
             <div className="footer-info">
-            <p>Amados - Adoção de gatinhos</p>
+            <p>Amados - Adoção de Animais</p>
             <p>CNPJ: xxxxxxxx/xxxx-xx</p>
             <p>E-mail: contato@amados.org.br</p>
             </div>
