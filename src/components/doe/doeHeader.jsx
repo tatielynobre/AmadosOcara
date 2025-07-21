@@ -1,5 +1,5 @@
 import './doe.css'
-import doe from '../../assets/doe.jpeg'
+import doe from '../../assets/doe.png'
 
 export default function DoacaoHeader() {
   return (
