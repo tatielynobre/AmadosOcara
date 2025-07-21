@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+.quem-somos-intro h2 {
+  font-family: 'Passion One', regular;
+  font-size: 64px;
+  margin-bottom: 1rem;
+}
+.texto p{
+  font-family: 'Inter', regular;
+  font-size: 32px;
+  color: #C50011;
+}
+
+.quem-somos-intro {
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.quem-somos-intro .texto {
+  flex: 1;
+  color: #c70000;
+}
+
+.quem-somos-intro .imagem-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.missao-valores {
+  background-color: #86000E;
+  color: #EDEDED;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.TituloMissao{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.missao-valores h2 {
+  font-family: 'Passion One', regular;
+  font-size: 64px;
+  margin: 0;
+}
+
+.pata {
+  width: 32px;
+  height: auto;
+}
+
+.missao-valores p {
+  font-family: 'Inter', regular;
+  text-align: justify;
+  font-size: 32px;
+  padding: 50px;
+  color: #EDEDED;
+}
+
+.historias {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.historias h2 {
+  font-family: 'Passion One', regular;
+  font-size: 64px;
+  color: #C50011;
+}

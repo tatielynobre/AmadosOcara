@@ -1,0 +1,85 @@
+.historias-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 2.5rem; 
+  }
+  
+  .slide {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .slide h3{
+    font-family: 'Passion One', regular;
+    font-size: 24px;
+    color: #C50011;
+    padding: 30px;
+  }
+  .slide p{
+    font-family: 'Inter', regular;
+    font-size: 16px;
+    color: #C50011;
+  }
+  .slide img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  .slide .texto {
+    max-width: 400px;
+    color: #a10014;
+    text-align: left;
+  }
+  
+  .seta {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #a10014;
+    cursor: pointer;
+    padding: 90px;
+  }
+  
+  .pontos {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .pontos span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .pontos span.ativo {
+    background-color: #a10014;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .quem-somos-intro {
+      flex-direction: column;
+    }
+  
+    .slide {
+      flex-direction: column;
+    }
+  
+    .slide img {
+      width: 100%;
+      max-width: 250px;
+    }
+  
+    .slide .texto {
+      text-align: center;
+    }
+  }
+  
