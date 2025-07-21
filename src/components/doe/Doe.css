@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+/* DoacaoHeader.css */
+.doacao-header {
+  background-color: #8b0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  color: white;
+  gap: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.doacao-header img {
+  width: 250px;
+  height: auto;
+  margin-left: 150px;
+}
+
+.doacao-header h2 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  text-align: right;
+  margin: 0;
+  flex: 1;
+  margin-right: 150px;
+}
+
+/* Container dos métodos de doação */
+.metodos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+/* Imagem central */
+.imagem-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.imagem-central img {
+  width: 200px;
+  height: auto;
+ 
+}
+
+/* MetodoDoacao.css */
+.metodo-doacao {
+  border: 2px solid #d40000;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  width: 370px;
+  height: 350px;
+  color: #d40000;
+  display: flex;
+  flex-direction: column;
+}
+
+.metodo-doacao h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Passion One', sans-serif;
+}
+
+.metodo-doacao p {
+  font-family: 'Inter', sans-serif;
+}
+
+.metodo-doacao img {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 20px;
+  /* No border-radius, no object-fit */
+}
+
+/* ContatoAjuda.css */
+.contato-ajuda {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  padding: 30px 10px;
+  margin: 40px auto 40px auto;
+  width: 30%;
+  font-family: 'Passion One', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato-ajuda h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+
+}
