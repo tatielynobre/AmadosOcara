@@ -113,3 +113,18 @@
   font-family: 'Inter', sans-serif;
 
 }
+
+.contato-ajuda p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1.1rem;
+}
+
+.contato-ajuda img {
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+}
