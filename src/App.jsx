@@ -6,6 +6,7 @@ import Parceiros from '/src/views/Parceiros';
 import Artigos from '/src/views/Artigos';
 import Transparencia from '/src/views/Transparencia';
 import Doe from '/src/views/Doe';
+import VerArtigo from '/src/views/verArtigo';
 
 
 import './App.css'
@@ -21,6 +22,8 @@ function App() {
           <Route path="/artigos" element={<Artigos />} />
           <Route path="/transparencia" element={<Transparencia />} />
           <Route path="/doe" element={<Doe />} />
+          <Route path="/artigos/:id" element={<VerArtigo />} />
+
       </Routes>
     </Router>
   );

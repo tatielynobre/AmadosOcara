@@ -54,6 +54,19 @@
     margin-top: 0.3rem;
 }
 
+.cartao-artigo-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cartao-artigo-link:visited,
+.cartao-artigo-link:active,
+.cartao-artigo-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 600px) {
     .cartao-artigo {
         flex-direction: column;

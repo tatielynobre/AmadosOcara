@@ -1,14 +1,15 @@
-import Footer from '../components/footer/Footer';
 import NavBar from '../components/navBar/navBar';
+import VerArtigo from '../components/artigos/verArtigo';
+import Footer from '../components/footer/Footer';
 
-function VerArtigo() {
-    return (
+function VerArtigoView() {
+  return (
     <>
-        <NavBar />
-        <h1>OI AQUI É O ADOTE</h1>
-        <Footer />
+      <NavBar />
+      <VerArtigo />
+      <Footer />
     </>
-    );
+  );
 }
 
-export default VerArtigo;
+export default VerArtigoView;

@@ -40,7 +40,14 @@ export default function ArtigosLista({ artigos }) {
       </div>
       <section className="artigos-cards">
         {resultado.map(artigo => (
-          <CartaoArtigo key={artigo.id} {...artigo} />
+          <CartaoArtigo
+            key={artigo.id}
+            id={artigo.id}
+            titulo={artigo.titulo}
+            resumo={artigo.resumo}
+            imagem={artigo.imagem}
+            data={artigo.data}
+          />
         ))}
         {resultado.length === 0 && (
           <p className="artigos-sem-resultado">Nenhum artigo encontrado.</p>

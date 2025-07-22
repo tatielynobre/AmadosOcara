@@ -1,0 +1,101 @@
+.ver-artigo-container {
+  padding: 40px;
+  color: #9e0000;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.voltar-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  font-family: 'Inter', sans-serif;
+  background-color: #d60000;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.ver-artigo-titulo {
+  font-family: 'Passion One', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ver-artigo-topo-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.ver-artigo-img {
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.ver-artigo-primeiro-paragrafo {
+  font-size: 1.13rem;
+  color: #000000;
+  line-height: 1.7;
+  margin: 0;
+  text-align: left;
+  align-self: center;
+  text-align: justify;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.ver-artigo-conteudo {
+  margin-top: 18px;
+  font-size: 1.13rem;
+  text-align: justify;
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+
+
+
+}
+
+.ver-artigo-paragrafo {
+  font-size: 1.13rem;
+  color: #000000;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-align: left;
+  text-align: justify;
+  font-family: 'Inter', sans-serif;
+
+
+}
+
+.ver-artigo-data {
+  font-size: 0.98rem;
+  color: #888;
+  text-align: right;
+  margin-top: 18px;
+}
+
+@media (max-width: 800px) {
+  .ver-artigo-topo-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .ver-artigo-img {
+    max-width: 90vw;
+  }
+  .ver-artigo-primeiro-paragrafo {
+    text-align: left;
+  }
+  .ver-artigo-container {
+    padding: 18px 4vw;
+  }
+}
+  

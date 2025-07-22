@@ -7,7 +7,7 @@ const artigos = [
     id: 1,
     titulo: '5 dicas para cuidar melhor do seu Pet',
     resumo: 'Veja dicas essenciais para o bem-estar do seu animal de estimação.',
-    conteudo: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+    conteudo: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.\n\nLorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.\n\nLorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
     imagem: caoEgato,
     data: '23/05/2025',
   },
@@ -16,7 +16,7 @@ const artigos = [
     titulo: 'Como alimentar seu cachorro corretamente',
     resumo: 'Saiba como oferecer uma alimentação saudável e balanceada para seu cão.',
     conteudo: `Alimentação é fundamental para a saúde do seu pet. Descubra como escolher a melhor ração e a importância da água fresca.`,
-    imagem: biscoito,
+    imagem: jupiter,
     data: '20/05/2025',
   },
   {
@@ -24,7 +24,7 @@ const artigos = [
     titulo: 'A importância das vacinas em gatos',
     resumo: 'Entenda por que vacinar seu gato é essencial para a saúde dele e da família.',
     conteudo: `Vacinas previnem doenças graves e garantem uma vida longa ao seu felino. Consulte sempre um veterinário.`,
-    imagem: jupiter,
+    imagem: biscoito ,
     data: '18/05/2025',
   },
   {
