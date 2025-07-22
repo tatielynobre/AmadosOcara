@@ -66,6 +66,69 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-height: 540px; /* 3 cards de ~180px cada + gaps */
+}
+
+.artigos-paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0px;
+}
+
+.artigos-paginacao-btn {
+  background: #8b0a10;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.artigos-paginacao-btn:disabled {
+  background: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.artigos-paginacao-btn:not(:disabled):hover {
+  background: #c50011;
+}
+
+.artigos-paginacao-info {
+  color: #8b0a10;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.artigos-paginacao-setas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0 0 0;
+  min-height: 48px;
+}
+
+.artigos-seta {
+  background: none;
+  border: none;
+  color: #8b0a10;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: color 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+.artigos-seta:disabled {
+  color: #ccc;
+  cursor: default;
 }
 
 @media (max-width: 600px) {
@@ -93,6 +156,10 @@
   
   .artigos-busca-btn {
     width: 100%;
+  }
+
+  .artigos-cards {
+    min-height: 420px; /* menor altura para mobile */
   }
 }
 
