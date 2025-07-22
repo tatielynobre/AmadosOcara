@@ -1,15 +1,15 @@
-import Footer from '../components/footer/Footer';
 import NavBar from '../components/navBar/navBar';
 import ParceirosDiv from '../components/parceiros/ParceirosDiv';
+import Footer from '../components/footer/Footer';
 
 function Parceiros() {
-    return (
+  return (
     <>
-        <NavBar />
-        <ParceirosDiv />
-        <Footer />
+      <NavBar />
+      <ParceirosDiv />
+      <Footer />
     </>
-    );
+  );
 }
 
-export default Parceiros
+export default Parceiros;
