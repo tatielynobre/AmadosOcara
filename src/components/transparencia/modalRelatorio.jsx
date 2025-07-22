@@ -2,8 +2,33 @@ import React from 'react';
 import './transparencia.css';
 
 const ModalRelatorio = ({ mesAno, onClose }) => {
-  const handleDownload = () => {
-    alert(`Baixando PDF de ${mesAno}`);
+  // mesAno: "JANEIRO.2023"
+  const getPdfUrl = (mesAno) => {
+    const [mes, ano] = mesAno.split('.');
+    // Capitaliza a primeira letra, o resto minúsculo
+    const mesFormatado = mes.charAt(0) + mes.slice(1).toLowerCase();
+    return `/assets/${mesFormatado}-${ano}.pdf`;
+  };
+
+  const handleDownload = async () => {
+    const url = getPdfUrl(mesAno);
+    try {
+      const response = await fetch(url, { method: 'HEAD' });
+      if (response.ok) {
+        const [mes, ano] = mesAno.split('.');
+        const mesFormatado = mes.charAt(0) + mes.slice(1).toLowerCase();
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `${mesFormatado}-${ano}.pdf`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } else {
+        alert('PDF não disponível para este relatório.');
+      }
+    } catch (e) {
+      alert('PDF não disponível para este relatório.');
+    }
   };
 
   return (

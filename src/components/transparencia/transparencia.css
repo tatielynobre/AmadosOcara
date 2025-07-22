@@ -238,3 +238,58 @@
   justify-content: center;
   margin: 0 auto 16px auto;
 }
+
+.paginacao-relatorio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.paginacao-seta {
+  background: none;
+  border: none;
+  color: #8b0a10;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: color 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+.paginacao-seta:disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.paginacao-numero {
+  color: #8b0a10;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 4px;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.paginacao-numero.ativo,
+.paginacao-numero:hover {
+  background: #ffeaea;
+}
+
+.relatorio-grid-container {
+  text-align: center;
+}
+
+.relatorio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+  justify-items: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import RelatorioCard from './relatorioCard';
 import './transparencia.css';
 
@@ -6,9 +6,12 @@ const MESES = [
   'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
   'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
 ];
-const ANOS = [2022,2023, 2024, 2025];
+const ANOS = [2023, 2024, 2025];
+const POR_PAGINA = 12;
 
 export default function RelatorioGrid({ mesFiltro, anoFiltro, onCardClick }) {
+  const [paginaAtual, setPaginaAtual] = useState(1);
+
   // Simulação de relatórios
   const relatorios = [];
   for (let ano of ANOS) {
@@ -20,27 +23,61 @@ export default function RelatorioGrid({ mesFiltro, anoFiltro, onCardClick }) {
     (mesFiltro === '' || r.toLowerCase().includes(mesFiltro.toLowerCase())) &&
     (anoFiltro === '' || r.includes(anoFiltro))
   );
+
+  // Paginação
+  const totalPaginas = Math.ceil(relatoriosFiltrados.length / POR_PAGINA);
+  const inicio = (paginaAtual - 1) * POR_PAGINA;
+  const fim = inicio + POR_PAGINA;
+  const relatoriosPagina = relatoriosFiltrados.slice(inicio, fim);
+
+  const handleAnterior = () => setPaginaAtual(p => Math.max(1, p - 1));
+  const handleProxima = () => setPaginaAtual(p => Math.min(totalPaginas, p + 1));
+
+  // Resetar para página 1 ao mudar filtro
+  useEffect(() => {
+    setPaginaAtual(1);
+  }, [mesFiltro, anoFiltro]);
+
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '32px',
-        marginTop: '40px',
-        justifyItems: 'center',
-        maxWidth: 900,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: '60px'
-      }}
-    >
-      {relatoriosFiltrados.map((r, i) => (
-        <RelatorioCard
-          key={i}
-          mesAno={r}
-          onClick={() => onCardClick(r)}
-        />
-      ))}
+    <div className="relatorio-grid-container">
+      <div className="relatorio-grid">
+        {relatoriosPagina.map((r, i) => (
+          <RelatorioCard
+            key={i}
+            mesAno={r}
+            onClick={() => onCardClick(r)}
+          />
+        ))}
+      </div>
+      {totalPaginas > 1 && (
+        <div className="paginacao-relatorio">
+          <button
+            className="paginacao-seta"
+            onClick={handleAnterior}
+            disabled={paginaAtual === 1}
+            aria-label="Página anterior"
+          >
+            &#8592;
+          </button>
+          {Array.from({ length: totalPaginas }, (_, idx) => (
+            <span
+              key={idx + 1}
+              className={`paginacao-numero${paginaAtual === idx + 1 ? ' ativo' : ''}`}
+              onClick={() => setPaginaAtual(idx + 1)}
+            >
+              {idx + 1}
+            </span>
+          ))}
+          <button
+            className="paginacao-seta"
+            onClick={handleProxima}
+            disabled={paginaAtual === totalPaginas}
+            aria-label="Próxima página"
+          >
+            &#8594;
+          </button>
+        </div>
+      )}
     </div>
   );
 } 
