@@ -24,8 +24,10 @@ function VerArtigo() {
 
   return (
     <div className="ver-artigo-container">
-      <button className="voltar-btn" onClick={() => navigate('/artigos')}>← Voltar</button>
-      <h2 className="ver-artigo-titulo">{artigo.titulo}</h2>
+      <div className="ver-artigo-header">
+        <button className="voltar-btn" onClick={() => navigate('/artigos')}>← Voltar</button>
+        <h2 className="ver-artigo-titulo">{artigo.titulo}</h2>
+      </div>
       <div className="ver-artigo-topo-flex">
         <img src={artigo.imagem} alt="Artigo" className="ver-artigo-img" />
         {paragrafos[0] && (
