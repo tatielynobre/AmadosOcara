@@ -12,18 +12,17 @@
   color: white;
   gap: 50px;
   width: 100%;
-  height: 300px;
 }
 
 .doacao-header img {
-  width: 350px;
+  width: 480px;
   height: auto;
   margin-left: 150px;
 }
 
 .doacao-header h2 {
-  font-size: 1.8rem;
-  line-height: 1.6;
+  font-size: 45px;
+  line-height: 1.2;
   font-family: 'Inter', sans-serif;
   text-align: right;
   margin: 0;
