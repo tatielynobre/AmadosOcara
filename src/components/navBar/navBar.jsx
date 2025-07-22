@@ -9,9 +9,9 @@ export default function NavBar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">
+      <div>
         <Link to="/">
-          <img src={logo} alt="Amados Logo" className="navbar-logo" />
+            <img src={logo} alt="Amados Logo" className="navbar-logo" />
         </Link>
       </div>
       <button
