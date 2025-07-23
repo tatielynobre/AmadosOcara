@@ -1,14 +1,15 @@
 import Footer from '../components/footer/Footer';
 import NavBar from '../components/navBar/navBar';
+import Adote from '../components/adote/Adote';
 
-function Adote() {
+function AdoteView() {
     return (
     <>
         <NavBar />
-        <h1>OI AQUI É O ADOTE</h1>
+        <Adote />
         <Footer />
     </>
     );
 }
 
-export default Adote
+export default AdoteView;

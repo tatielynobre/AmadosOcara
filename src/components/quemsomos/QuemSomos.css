@@ -4,12 +4,12 @@
 
 .quem-somos-intro h2 {
   font-family: 'Passion One', regular;
-  font-size: 64px;
+  font-size: 50px;
   margin-bottom: 1rem;
 }
 .texto p{
   font-family: 'Inter', regular;
-  font-size: 32px;
+  font-size: 26px;
   color: #C50011;
 }
 
@@ -23,7 +23,8 @@
 
 .quem-somos-intro .texto {
   flex: 1;
-  color: #c70000;
+  text-align: justify;
+  color: #C50011;
 }
 
 .quem-somos-intro .imagem-container {
@@ -51,7 +52,7 @@
 
 .missao-valores h2 {
   font-family: 'Passion One', regular;
-  font-size: 64px;
+  font-size: 50px;
   margin: 0;
 }
 
@@ -63,18 +64,24 @@
 .missao-valores p {
   font-family: 'Inter', regular;
   text-align: justify;
-  font-size: 32px;
-  padding: 50px;
+  font-size: 26px;
+  padding: 20px;
+  margin-bottom: 40px;
   color: #EDEDED;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .historias {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .historias h2 {
   font-family: 'Passion One', regular;
-  font-size: 64px;
+  font-size: 50px;
+  margin-bottom: 40px;
+  padding-top: 20px;
   color: #C50011;
 }
