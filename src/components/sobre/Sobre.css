@@ -77,7 +77,11 @@
     padding: 2rem 1rem;
 }
 
-.logo-sobre-nos, .texto-sobre-nos {
-    width: 100%;
+.logo-sobre-nos, .botao-sobre-nos {
+    width: 70%;
     }
+
+.texto-sobre-nos {
+    width: 80%;
+}
 }  
