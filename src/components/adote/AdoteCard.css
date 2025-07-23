@@ -1,0 +1,65 @@
+.adote-card {
+  background-color: #a00014; /* vermelho escuro do design */
+  border-radius: 20px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 0 30px 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.adote-card:hover {
+  transform: translateY(-5px);
+}
+
+.adote-card-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  background-color: #ff7f50; /* fundo laranja */
+  border-radius: 20px;
+  margin: 30px auto 0 auto;
+  display: block;
+}
+
+.adote-card-content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.adote-card-name {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 25px 0 20px 0;
+  font-weight: bold;
+}
+
+.adote-card-button {
+  background-color: #fff;
+  color: #c43a3a;
+  padding: 14px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bold;
+  box-shadow: none;
+  text-transform: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.adote-card-button:hover {
+  background-color: #ffeaea;
+  color: #a00014;
+}
