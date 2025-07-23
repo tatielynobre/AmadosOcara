@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { getAnimais } from '../../services/animaisService';
 import './Amados.css';
 
@@ -6,6 +7,7 @@ const Amados = () => {
     const [animais, setAnimais] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchAnimais = async () => {
@@ -83,10 +85,7 @@ const Amados = () => {
             </div>
             
             <div className="amados-cta">
-            <button 
-                className="amados-btn-principal"
-                onClick={handleVerTodosAnimais}
-            >
+            <button className="amados-btn-principal" onClick={() => navigate('/adote')}>
                 Conheça os animais disponíveis
             </button>
             </div>
