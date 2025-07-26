@@ -11,6 +11,7 @@
   font-family: 'Inter', regular;
   font-size: 26px;
   color: #C50011;
+  text-align: justify;
 }
 
 .quem-somos-intro {
@@ -84,4 +85,100 @@
   margin-bottom: 40px;
   padding-top: 20px;
   color: #C50011;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .quem-somos-intro {
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 1.5rem;
+  }
+  
+  .quem-somos-intro h2,
+  .missao-valores h2,
+  .historias h2 {
+    font-size: 40px;
+  }
+  
+  .texto p,
+  .missao-valores p {
+    font-size: 22px;
+  }
+  
+  .missao-valores p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quem-somos-intro {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .quem-somos-intro .texto {
+    text-align: center;
+  }
+  
+  .quem-somos-intro h2,
+  .missao-valores h2,
+  .historias h2 {
+    font-size: 32px;
+  }
+  
+  .texto p,
+  .missao-valores p {
+    font-size: 18px;
+  }
+  
+  .missao-valores {
+    padding: 1.5rem;
+  }
+  
+  .missao-valores p {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+  }
+  
+  .TituloMissao {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quem-somos-intro {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .quem-somos-intro h2,
+  .missao-valores h2,
+  .historias h2 {
+    font-size: 24px;
+  }
+  
+  .texto p,
+  .missao-valores p {
+    font-size: 16px;
+  }
+  
+  .missao-valores {
+    padding: 1rem;
+  }
+  
+  .missao-valores p {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  
+  .pata {
+    width: 24px;
+  }
 }

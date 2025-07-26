@@ -51,7 +51,7 @@ function AdoteSearch({
           <option value="">Selecione</option>
           <option value="Cachorro">Cachorro</option>
           <option value="Gato">Gato</option>
-          {/* Adicione outras espécies se houver */}
+          {/*fim*/}
         </select>
       </div>
     </div>

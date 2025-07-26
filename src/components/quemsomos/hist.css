@@ -8,32 +8,54 @@
   
   .slide {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
   }
+  
   .slide h3{
     font-family: 'Passion One', regular;
     font-size: 28px;
     color: #C50011;
     padding: 3px;
     text-align: left;
+    margin-bottom: 1rem;
   }
+  
   .slide p{
     font-family: 'Inter', regular;
     font-size: 22px;
     text-align: justify;
     color: #C50011;
     max-width: 600px;
-    text-align: left;
-    
+    line-height: 1.5;
+    word-wrap: break-word;
+    hyphens: auto;
   }
+  
   .slide img {
     width: 330px;
     height: 330px;
     object-fit: cover;
     border-radius: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .slide .texto {
+    flex: 1;
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+  
+  .conteudo-slide {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
   }
   
   .seta {
@@ -42,9 +64,18 @@
     border: none;
     color: #a10014;
     cursor: pointer;
-    margin: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 60px;
+    transition: all 0.3s ease;
+  }
+  
+  .seta:hover {
+    color: #C50011;
+    transform: scale(1.1);
   }
   
   .pontos {
@@ -58,6 +89,8 @@
     height: 12px;
     border-radius: 50%;
     background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .pontos span.ativo {
@@ -65,22 +98,75 @@
   }
   
   /* Responsivo */
-  @media (max-width: 768px) {
-    .quem-somos-intro {
-      flex-direction: column;
+  @media (max-width: 1024px) {
+    .slide {
+      gap: 1.5rem;
+      padding: 0 1rem;
     }
+    
+    .slide h3 {
+      font-size: 24px;
+    }
+    
+    .slide p {
+      font-size: 20px;
+      max-width: 500px;
+    }
+    
+    .slide img {
+      width: 280px;
+      height: 280px;
+    }
+    
+    .seta {
+      font-size: 40px;
+      min-width: 50px;
+      height: 50px;
+    }
+  }
   
+  @media (max-width: 600px) {
+    .historias-container {
+      gap: 2rem;
+    }
+    
     .slide {
       flex-direction: column;
-    }
-  
-    .slide img {
-      width: 100%;
-      max-width: 250px;
-    }
-  
-    .slide .texto {
       text-align: center;
+      gap: 1.5rem;
+      padding: 0 0.5rem;
+    }
+    
+    .conteudo-slide {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .slide h3 {
+      font-size: 22px;
+      text-align: center;
+    }
+    
+    .slide p {
+      font-size: 18px;
+      text-align: center;
+      padding: 0;
+    }
+    
+    .slide img {
+      width: 250px;
+      height: 250px;
+    }
+    
+    .seta {
+      font-size: 35px;
+      min-width: 45px;
+      height: 45px;
+      margin: 10px;
+    }
+    
+    .slide .texto {
+      padding: 0;
     }
   }
   
