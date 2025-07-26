@@ -15,8 +15,8 @@ export default function QuemSomos() {
               Nosso trabalho é movido pelo compromisso de resgatar, cuidar e 
               encontrar lares responsáveis para animais em situação de abandono, maus-tratos ou risco. </p>
             <br />
-            <p >A ONG foi fundada em 2019, a partir da união de pessoas da comunidade que não aceitaram mais ver t
-              antos animais sofrendo nas ruas. Desde então, atuamos de forma independente, contando com o apoio da população, 
+            <p >A ONG foi fundada em 2019, a partir da união de pessoas da comunidade que não aceitaram mais ver 
+              tantos animais sofrendo nas ruas. Desde então, atuamos de forma independente, contando com o apoio da população, 
               de doadores e de voluntários que se dedicam diariamente a transformar a realidade de cães e gatos da nossa região.</p>
           </div>
           <div className="imagem-container">
