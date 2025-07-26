@@ -45,7 +45,10 @@ export default function ParceirosDiv() {
           </div>
         </div>
       </div>
-      <button className="parceiros-botao">Quero ser parceiro</button>
+      <button 
+      className="parceiros-botao" 
+      onClick={() => window.open('https://forms.gle/cf2Sygef5LhMrozw6', '_blank')}
+        >Quero ser parceiro</button>
     </div>
   );
 }
