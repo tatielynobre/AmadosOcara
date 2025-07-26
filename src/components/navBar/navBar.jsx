@@ -22,6 +22,7 @@ export default function NavBar() {
         &#9776;
       </button>
       <ul className={`navbar-links${open ? ' open' : ''}`}>
+      <li><Link to="/">Home</Link></li>
         <li><Link to="/quem-somos">Quem somos</Link></li>
         <li><Link to="/adote">Adote</Link></li>
         <li><Link to="/parceiros">Parceiros</Link></li>
