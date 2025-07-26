@@ -43,10 +43,10 @@
 
 .filtro select,
 .filtro input {
-  width: 90px;
-  min-width: 60px;
-  max-width: 120px;
-  padding: 4px 8px;
+  width: 120px;
+  min-width: 100px;
+  max-width: 150px;
+  padding: 6px 10px;
   border-radius: 7px;
   border: 2px solid #8b0a10;
   background: #fff;
@@ -301,14 +301,17 @@
 
 .relatorio-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 32px;
   margin-top: 40px;
   justify-items: center;
+  align-items: start;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  padding: 0 20px;
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
@@ -330,16 +333,18 @@
   }
   .filtro select,
   .filtro input {
-    width: 100px;
-    min-width: 80px;
-    max-width: 120px;
+    width: 110px;
+    min-width: 90px;
+    max-width: 130px;
     padding: 5px 8px;
     font-size: 0.9rem;
   }
   .relatorio-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 18px;
     margin-top: 24px;
+    padding: 0 15px;
+    justify-content: center;
   }
   .card {
     width: 140px;
@@ -444,16 +449,18 @@
   }
   .filtro select,
   .filtro input {
-    width: 90px;
-    min-width: 70px;
-    max-width: 110px;
+    width: 100px;
+    min-width: 80px;
+    max-width: 120px;
     padding: 4px 6px;
     font-size: 0.85rem;
   }
   .relatorio-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 12px;
     margin-top: 12px;
+    padding: 0 10px;
+    justify-content: center;
   }
   .card {
     width: 150px;
@@ -554,9 +561,9 @@
   }
   .filtro select,
   .filtro input {
-    width: 80px;
-    min-width: 50px;
-    max-width: 100px;
+    width: 90px;
+    min-width: 70px;
+    max-width: 110px;
     padding: 3px 6px;
     font-size: 0.85rem;
   }
