@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Sobre.css";
 import logo from "../../assets/image.png"; 
 
 const SobreNos = () => {
+    const navigate = useNavigate();
+    
     return (
         <section className="sobre-nos">
         <div className="sobre-nos-container">
@@ -16,7 +19,7 @@ const SobreNos = () => {
                 tratamento e busca por adoções responsáveis,
                 enfrentando sérias limitações de tempo, estrutura e recursos.
             </p>
-            <button className="botao-sobre-nos">Saiba mais</button>
+            <button className="botao-sobre-nos" onClick={() => navigate('/quem-somos')}>Saiba mais</button>
             </div>
         </div>
         </section>
