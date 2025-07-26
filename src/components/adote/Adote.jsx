@@ -54,7 +54,12 @@ function Adote() {
       </div>
       <div className="adote-final-box">
         <h2 className="adote-final-title">Está buscando algum animal?</h2>
-        <button className="adote-final-btn">Demonstrar interesse</button>
+        <button 
+          className="adote-final-btn"
+          onClick={() => window.open('https://forms.gle/BUhQ5gfNLmRnGM3a9', '_blank')}
+        >
+          Demonstrar interesse
+        </button>
       </div>
     </div>
   );
