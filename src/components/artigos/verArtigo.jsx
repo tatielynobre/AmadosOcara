@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { getArtigoPorId } from '../../services/artigosService';
-import './VerArtigo.css';
+import './verArtigo.css';
 import { useEffect, useState } from 'react';
 
 function VerArtigo() {
