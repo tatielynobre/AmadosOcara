@@ -17,7 +17,7 @@ const SobreNos = () => {
                 exclusivamente por voluntários, a Amados
                 realiza ações de resgate, castração, 
                 tratamento e busca por adoções responsáveis,
-                enfrentando sérias limitações de tempo, estrutura e recursos.
+                enfrentando sérias limitações de tempo, estrutura e recursos. 
             </p>
             <button className="botao-sobre-nos" onClick={() => navigate('/quem-somos')}>Saiba mais</button>
             </div>
