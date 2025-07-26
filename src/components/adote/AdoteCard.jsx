@@ -1,5 +1,5 @@
 import React from 'react';
-import './AdoteCard.css'; // Vamos criar este arquivo de CSS
+import './AdoteCard.css'; 
 
 function AdoteCard({ animal }) {
   return (

@@ -12,7 +12,6 @@ const POR_PAGINA = 12;
 export default function RelatorioGrid({ mesFiltro, anoFiltro, onCardClick }) {
   const [paginaAtual, setPaginaAtual] = useState(1);
 
-  // Simulação de relatórios
   const relatorios = [];
   for (let ano of ANOS) {
     for (let mes of MESES) {
@@ -24,7 +23,6 @@ export default function RelatorioGrid({ mesFiltro, anoFiltro, onCardClick }) {
     (anoFiltro === '' || r.includes(anoFiltro))
   );
 
-  // Paginação
   const totalPaginas = Math.ceil(relatoriosFiltrados.length / POR_PAGINA);
   const inicio = (paginaAtual - 1) * POR_PAGINA;
   const fim = inicio + POR_PAGINA;
@@ -33,7 +31,6 @@ export default function RelatorioGrid({ mesFiltro, anoFiltro, onCardClick }) {
   const handleAnterior = () => setPaginaAtual(p => Math.max(1, p - 1));
   const handleProxima = () => setPaginaAtual(p => Math.min(totalPaginas, p + 1));
 
-  // Resetar para página 1 ao mudar filtro
   useEffect(() => {
     setPaginaAtual(1);
   }, [mesFiltro, anoFiltro]);

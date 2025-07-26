@@ -115,7 +115,7 @@
     transform: translateY(-2px);
     }
 
-    /* Estados de loading e error */
+    
     .loading, .error {
     color: #ffffff;
     font-size: 1.2rem;

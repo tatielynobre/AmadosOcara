@@ -1,5 +1,5 @@
 .adote-card {
-  background-color: #a00014; /* vermelho escuro do design */
+  background-color: #a00014; 
   border-radius: 20px;
   width: 300px;
   overflow: hidden;
@@ -20,7 +20,7 @@
   width: 220px;
   height: 220px;
   object-fit: cover;
-  background-color: #ff7f50; /* fundo laranja */
+  background-color: #ff7f50; 
   border-radius: 20px;
   margin: 30px auto 0 auto;
   display: block;

@@ -7,7 +7,6 @@ import pata from "../../assets/Iconepatinha.png";
 export default function QuemSomos() {
     return (
       <main className="quem-somos-container">
-        {/* Seção 1: Quem Somos */}
         <section className="quem-somos-intro">
           <div className="texto">
             <h2>Quem somos?</h2>
@@ -24,7 +23,6 @@ export default function QuemSomos() {
           </div>
         </section>
   
-        {/* Seção 2: Missão e valores */}
         <section className="missao-valores">
             <div className="TituloMissao">
             <img src={pata} alt="Pata" className="pata" />
@@ -37,11 +35,8 @@ export default function QuemSomos() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  pharetra tellus, ut ullamcorper lorem nunc nec eros. Praesent velit felis, hendrerit eu sagittis a, 
             lobortis eget metus. In nec placerat neque. Vestibulum ante ipsum primis in faucibus orci ctor risus. 
             Fusce nibh arcu, semper sit amet ultrices eleifend, pulvinar nec risus. Aliquam vel dictum lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor.</p>
-        
-
         </section>
   
-        {/* Seção 3: Carrossel */}
         <section className="historias">
           <h2>Conheça Algumas de nossas histórias</h2>
           <Carousel />

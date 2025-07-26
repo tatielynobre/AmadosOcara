@@ -97,7 +97,6 @@
   background-color: #a60000;
 }
 
-/* Visual dos links */
 .navbar-links a {
   color: #111;
   font-family: 'Inter', sans-serif;
@@ -116,7 +115,6 @@
   text-decoration: none;
 }
 
-/* Botão hambúrguer */
 .navbar-toggle {
   display: none;
   background: none;
@@ -126,7 +124,6 @@
   cursor: pointer;
 }
 
-/* Responsividade para mobile */
 @media (max-width: 700px) {
   .navbar-toggle {
     display: block;

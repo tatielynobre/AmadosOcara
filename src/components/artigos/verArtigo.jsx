@@ -19,7 +19,6 @@ function VerArtigo() {
   if (carregando) return <div className="ver-artigo-loading">Carregando...</div>;
   if (!artigo) return <div className="ver-artigo-notfound">Artigo não encontrado</div>;
 
-  // Divide o conteúdo em parágrafos
   const paragrafos = artigo.conteudo.split('\n').filter(Boolean);
 
   return (

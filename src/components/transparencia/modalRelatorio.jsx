@@ -2,10 +2,8 @@ import React from 'react';
 import './transparencia.css';
 
 const ModalRelatorio = ({ mesAno, onClose }) => {
-  // mesAno: "JANEIRO.2023"
   const getPdfUrl = (mesAno) => {
     const [mes, ano] = mesAno.split('.');
-    // Capitaliza a primeira letra, o resto minúsculo
     const mesFormatado = mes.charAt(0) + mes.slice(1).toLowerCase();
     return `/assets/${mesFormatado}-${ano}.pdf`;
   };

@@ -94,7 +94,6 @@
   color: #C50011;
 }
 
-/* Responsividade */
 @media (max-width: 1024px) {
   .quem-somos-intro {
     margin-left: 40px;

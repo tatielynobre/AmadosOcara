@@ -97,7 +97,6 @@
     background-color: #a10014;
   }
   
-  /* Responsivo */
   @media (max-width: 1024px) {
     .slide {
       gap: 1.5rem;

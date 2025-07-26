@@ -1,5 +1,5 @@
 import React from 'react';
-import './AdoteSearch.css'; // Vamos criar este arquivo de CSS
+import './AdoteSearch.css'; 
 import lupa from '../../assets/lupa.png';
 
 function AdoteSearch({
@@ -51,7 +51,6 @@ function AdoteSearch({
           <option value="">Selecione</option>
           <option value="Cachorro">Cachorro</option>
           <option value="Gato">Gato</option>
-          {/*fim*/}
         </select>
       </div>
     </div>

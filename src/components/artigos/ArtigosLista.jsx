@@ -18,15 +18,14 @@ export default function ArtigosLista({ artigos }) {
         artigos.filter(a => a.titulo.includes(busca))
       );
     }
-    setPaginaAtual(1); // Resetar para página 1 ao buscar
+    setPaginaAtual(1); 
   }
 
   useEffect(() => {
     setResultado(artigos);
-    setPaginaAtual(1); // Resetar para página 1 ao mudar artigos
+    setPaginaAtual(1); 
   }, [artigos]);
 
-  // Paginação
   const totalPaginas = Math.ceil(resultado.length / POR_PAGINA);
   const inicio = (paginaAtual - 1) * POR_PAGINA;
   const fim = inicio + POR_PAGINA;
