@@ -6,23 +6,15 @@ import Footer from '../components/footer/Footer';
 
 function Artigos() {
   const [artigos, setArtigos] = useState([]);
-  const [carregando, setCarregando] = useState(true);
 
   useEffect(() => {
-    getArtigos().then(data => {
-      setArtigos(data);
-      setCarregando(false);
-    });
+    getArtigos().then(setArtigos);
   }, []);
 
   return (
     <main className="artigos-view">
       <NavBar />
-      {carregando ? (
-        <p>Carregando...</p>
-      ) : (
-        <ArtigosLista artigos={artigos} />
-      )}
+      <ArtigosLista artigos={artigos} />
       <Footer />
     </main>
   );

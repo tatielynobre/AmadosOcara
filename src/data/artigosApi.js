@@ -46,9 +46,9 @@ const artigos = [
 ];
 
 export async function getArtigos() {
-  return new Promise(resolve => setTimeout(() => resolve(artigos), 300));
+  return Promise.resolve(artigos);
 }
 
 export async function getArtigoPorId(id) {
-  return new Promise(resolve => setTimeout(() => resolve(artigos.find(a => a.id === Number(id))), 300));
-} 
+  return Promise.resolve(artigos.find(a => a.id === Number(id)));
+}

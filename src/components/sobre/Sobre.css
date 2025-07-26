@@ -2,12 +2,12 @@
 
 .sobre-nos {
     width: 100%;
-    min-height: 350px; 
+    min-height: 600px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
 }
 
 .sobre-nos-container {
@@ -16,14 +16,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem; 
+    gap: 10rem;
     flex-wrap: wrap;
-    padding: 1rem; 
+    padding: 2rem;
 }
 
 .logo-sobre-nos {
-    width: 70%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     margin: 1rem;
 }
@@ -38,7 +38,7 @@
     color: #C50011;
     font-family: 'Passion One', cursive;
     font-weight: 400; 
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .texto-sobre-nos p {
@@ -77,11 +77,7 @@
     padding: 2rem 1rem;
 }
 
-.logo-sobre-nos, .botao-sobre-nos {
-    width: 70%;
+.logo-sobre-nos, .texto-sobre-nos {
+    width: 100%;
     }
-
-.texto-sobre-nos {
-    width: 80%;
-}
 }  
