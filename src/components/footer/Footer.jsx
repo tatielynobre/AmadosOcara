@@ -8,14 +8,14 @@ function Footer() {
             <img src={logo} alt="Logo Amados" className="footer-logo" />
 
             <div className="footer-info">
-            <p>Amados - Adoção de gatinhos</p>
-            <p>CNPJ: xxxxxxxx/xxxx-xx</p>
-            <p>E-mail: contato@amados.org.br</p>
+            <p>Amados - Adoção de Animais</p>
+            <p>CNPJ: 53.710.256/0001-59</p>
+            <p>E-mail: amados.ocara@gmail.com</p>
             </div>
 
             <div className="footer-social">
             <p><strong>Siga-nos:</strong></p>
-            <p>@AmadosOcara</p>
+            <a href="https://www.instagram.com/amados_ocara/" target="_blank">@amados_ocara</a>
             </div>
         </div>
         </footer>

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.parceiros {
+  background-color: #86000e;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.titulo {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.parceiro-descricao
+{
+    color: white;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+}
+
+.img-box {
+  background-color: white;
+  border-radius: 14px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.img-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-nome {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0 4px;
+}
+
+.card-desc {
+  color: white;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0 8px;
+}
+
+.botao-container {
+  margin-top: 30px;
+}
+
+.botao-parceiro {
+  background-color: white;
+  color: #86000e;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 55px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-parceiro:hover {
+  background-color: #f2f2f2;
+}
+.parceiros-bg {
+  background: #8b0a10;
+  min-height: 70vh;
+  padding: 60px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parceiros-titulo {
+  color: #fff;
+  font-family: 'Passion One', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0;
+  z-index: 2;
+}
+
+.parceiros-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+.parceiro-card {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parceiro-descricao
+{
+    color: white;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.parceiros-botao {
+  background: #fff;
+  color: #8b0a10;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+.parceiros-botao:hover {
+  background: #ffeaea;
+  color: #8b0a10;
+}
+
+.parceiro-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.parceiro-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+.descricao-parceiro {
+  text-align: center;
+  color: #fff;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.descricao-parceiro h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-family: 'Passion One', sans-serif;
+  color: #fff;
+}
+
+.descricao-parceiro p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .parceiros-cards {
+    gap: 20px;
+  }
+  .parceiro-card {
+    width: 160px;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .parceiros-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .parceiro-card {
+    width: 90vw;
+    max-width: 320px;
+  }
+} 

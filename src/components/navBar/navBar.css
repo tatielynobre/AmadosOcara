@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,4 +49,99 @@
 
 #Doe:hover {
   background-color: #a60000;
+}
+.nav-links,
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a,
+.navbar-links a {
+  text-decoration: none;
+  color: #8b0a10;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, background 0.2s;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.nav-links a:hover,
+.navbar-links a:hover {
+  color: #a60000;
+
+}
+
+#Doe,
+.navbar-links .destaque {
+  background-color: #c40000;
+  color: white !important;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-left: 8px;
+}
+
+#Doe:hover,
+.navbar-links .destaque:hover {
+  background-color: #a60000;
+}
+
+.navbar-links a {
+  color: #111;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: color 0.2s;
+  background: none;
+}
+
+.navbar-links a:hover {
+  color: #a60000;
+  background: none;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #8b0a10;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 180px;
+    box-shadow: 0 2px 8px #0002;
+    border-radius: 0 0 0 12px;
+    padding: 16px 0;
+    z-index: 100;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
 }

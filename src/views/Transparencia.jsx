@@ -1,14 +1,19 @@
-import Footer from '../components/footer/Footer';
 import NavBar from '../components/navBar/navBar';
+import TransparenciaPage from '../components/transparencia/TransparenciaPage';
+import Footer from '../components/footer/Footer';
 
-function Transparencia () {
-    return (
+function Transparencia() {
+  return (
     <>
-        <NavBar />
-        <h1>OI AQUI É O TRANSPARENCIA</h1>
-        <Footer />
+      <NavBar />
+      <TransparenciaPage />
+      <Footer />
     </>
-    );
+  );
 }
+export default Transparencia;
 
-export default Transparencia
+
+
+
+

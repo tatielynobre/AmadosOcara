@@ -1,0 +1,174 @@
+.artigos-container {
+  max-width: 900px;
+  margin: 0 auto; 
+  padding: 4rem 1.5rem 2rem 1.5rem; 
+}
+
+.artigos-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  position: relative; 
+}
+
+.artigos-titulo {
+  color: #86000E;
+  font-family: 'Passion One', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+.artigos-busca {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto; 
+}
+
+.artigos-busca-input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.artigos-busca-btn {
+  background: #C50011;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.artigos-busca-icone {
+  width: 20px;
+  height: 20px;
+}
+
+.artigos-busca-btn:hover {
+  background: #86000E;
+}
+
+.artigos-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 540px; 
+}
+
+.artigos-paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0px;
+}
+
+.artigos-paginacao-btn {
+  background: #8b0a10;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.artigos-paginacao-btn:disabled {
+  background: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.artigos-paginacao-btn:not(:disabled):hover {
+  background: #c50011;
+}
+
+.artigos-paginacao-info {
+  color: #8b0a10;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.artigos-paginacao-setas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0 0 0;
+  min-height: 48px;
+}
+
+.artigos-seta {
+  background: none;
+  border: none;
+  color: #8b0a10;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: color 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+.artigos-seta:disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+@media (max-width: 600px) {
+  .artigos-cabecalho {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .artigos-titulo {
+    position: static;
+    left: auto;
+    transform: none;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .artigos-busca {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .artigos-busca-input {
+    width: 100%;
+  }
+  
+  .artigos-busca-btn {
+    width: 100%;
+  }
+
+  .artigos-cards {
+    min-height: 420px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .artigos-titulo {
+    font-size: 1.5rem;
+  }
+  
+  .cartao-artigo {
+    padding: 1rem;
+  }
+}
