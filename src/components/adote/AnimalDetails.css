@@ -145,6 +145,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 0 10px;
+    align-items: center;
   }
   
   .animal-details-image {
@@ -162,6 +163,24 @@
   
   .animal-details-info {
     max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .animal-details-description {
+    text-align: center;
+  }
+  
+  .animal-details-details {
+    align-items: center;
+  }
+  
+  .animal-detail-item {
+    justify-content: center;
+  }
+  
+  .animal-details-adopt-btn {
+    align-self: center;
   }
   
   .animal-details-image-container {
@@ -181,9 +200,23 @@
   
   .animal-details-description {
     font-size: 16px;
+    text-align: center;
   }
   
   .animal-detail-item {
     font-size: 14px;
+    justify-content: center;
+  }
+  
+  .animal-details-info {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .animal-details-adopt-btn {
+    align-self: center;
+    width: 160px;
+    padding: 12px 25px;
+    font-size: 16px;
   }
 } 
