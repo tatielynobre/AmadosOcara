@@ -29,11 +29,11 @@ const Amados = () => {
     }, []);
 
     const handleSaibaMais = (animalId) => {
-        console.log(`Ver detalhes do animal ${animalId}`);
+        navigate(`/adote/${animalId}`);
     };
 
     const handleVerTodosAnimais = () => {
-        console.log('Ver todos os animais disponíveis');
+        navigate('/adote');
     };
 
     if (loading) {
@@ -85,7 +85,7 @@ const Amados = () => {
             </div>
             
             <div className="amados-cta">
-            <button className="amados-btn-principal" onClick={() => navigate('/adote')}>
+            <button className="amados-btn-principal" onClick={handleVerTodosAnimais}>
                 Conheça os animais disponíveis
             </button>
             </div>

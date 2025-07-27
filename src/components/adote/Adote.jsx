@@ -49,7 +49,10 @@ function Adote() {
       />
       <div className="adote-grid">
         {filteredAnimals.map(animal => (
-          <AdoteCard key={animal.id} animal={animal} />
+          <AdoteCard 
+            key={animal.id} 
+            animal={animal} 
+          />
         ))}
       </div>
       <div className="adote-final-box">

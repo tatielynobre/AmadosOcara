@@ -34,7 +34,7 @@ export const animaisData = [
         raca: 'Corgi',
         porte: 'Pequeno',
         disponivel: true,
-        historia: 'Júpiter é um filhotinho muito energético e brincalhão. Sempre alegre e pronto para brincar.',
+        historia: 'Júpiter é um cachorro extremamente amável, adora um colo, um cafuné e está sempre pronto para retribuir com lambidas e um olhar cheio de gratidão. Ele é sociável, tranquilo e se dá bem com pessoas e outros animais.',
         genero: 'Macho',
         especie: 'Cachorro',
     },

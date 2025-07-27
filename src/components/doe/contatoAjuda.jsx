@@ -7,7 +7,7 @@ export default function ContatoAjuda() {
       <h3><strong>Quer ajudar de outra maneira?</strong></h3>
       <p>
         <img src={mailIcon} alt="E-mail" />
-        <span>E-mail: contato@Amados.org.br</span>
+        <span>E-mail: amados.ocara@gmail.com</span>
       </p>
     </div>
   );
