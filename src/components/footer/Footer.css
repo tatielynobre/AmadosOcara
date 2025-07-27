@@ -29,6 +29,16 @@
         gap: 0.25rem;
         font-size: 0.95rem;
     }
+
+    .footer-social a {
+        color: #C50011;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-social a:hover {
+        color: #8b0000;
+    }
     
 
     @media (max-width: 768px) {

@@ -11,7 +11,6 @@ function AnimalDetails() {
   const [animal, setAnimal] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Efeito para rolar para o topo sempre que o ID mudar
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);

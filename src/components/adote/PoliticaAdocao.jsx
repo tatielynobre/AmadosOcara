@@ -5,7 +5,7 @@ function PoliticaAdocao() {
   return (
     <section className="politica-adocao">
       <div className="politica-adocao-container">
-        <h2 className="politica-adocao-title">Política de adoção</h2>
+        <h2 className="politica-adocao-title">Política de Adoção</h2>
         
         <div className="politica-adocao-content">
           <p>

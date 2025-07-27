@@ -26,19 +26,14 @@ export default function QuemSomos() {
         <section className="missao-valores">
             <div className="TituloMissao">
             <img src={pata} alt="Pata" className="pata" />
-          <h2> Nossa Missão e valores </h2>
+          <h2> Nossa Missão e Valores </h2>
           <img src={pata} alt="Pata" className="pata" />
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat, libero sed pretium fermentum, 
-            nulla dui pharetra tellus, ut ullamcorper lorem nunc nec eros. Praesent velit felis, hendrerit eu sagittis a,  et ultrices posuere cubilia curae; Duis vel vehicula metus, 
-            at auctor risus. Fusce nibh arcu, semper sit amet ultrices eleifend, pulvinar nec risus. Aliquam vel dictum lorem.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  pharetra tellus, ut ullamcorper lorem nunc nec eros. Praesent velit felis, hendrerit eu sagittis a, 
-            lobortis eget metus. In nec placerat neque. Vestibulum ante ipsum primis in faucibus orci ctor risus. 
-            Fusce nibh arcu, semper sit amet ultrices eleifend, pulvinar nec risus. Aliquam vel dictum lorem lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor.</p>
-        </section>
+          <p>A missão da ONG Amados é promover a adoção responsável de animais, oferecendo acolhimento, cuidados veterinários e muito amor para cães e gatos resgatados em situação de abandono ou vulnerabilidade. Guiada por valores como empatia, compromisso, respeito à vida e transparência, a Amados atua para construir uma rede solidária entre protetores, adotantes e voluntários, acreditando que cada animal merece um lar seguro e cheio de carinho.</p>
+          </section>
   
         <section className="historias">
-          <h2>Conheça Algumas de nossas histórias</h2>
+          <h2>Conheça Algumas de Nossas Histórias</h2>
           <Carousel />
         </section>
       </main>
