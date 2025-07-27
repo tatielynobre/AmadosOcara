@@ -1,14 +1,23 @@
-import Footer from '../components/footer/Footer';
+import { useEffect, useState } from 'react';
+import { getArtigos } from '../services/artigosService';
+import ArtigosLista from '../components/artigos/ArtigosLista';
 import NavBar from '../components/navBar/navBar';
+import Footer from '../components/footer/Footer';
 
 function Artigos() {
-    return (
-    <>
-        <NavBar />
-        <h1>OI AQUI É O ARTIGOS</h1>
-        <Footer />
-    </>
-    );
+  const [artigos, setArtigos] = useState([]);
+
+  useEffect(() => {
+    getArtigos().then(setArtigos);
+  }, []);
+
+  return (
+    <main className="artigos-view">
+      <NavBar />
+      <ArtigosLista artigos={artigos} />
+      <Footer />
+    </main>
+  );
 }
 
-export default Artigos
+export default Artigos;

@@ -1,0 +1,106 @@
+.adote-search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ffff;
+  border-radius: 8px;
+}
+
+.search-input-group,
+.filter-select-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search-input-group label,
+.filter-select-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-with-icon {
+  position: relative;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-with-icon input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  min-width: 0;
+}
+
+.search-button {
+  background-color: #c43a3a;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.search-button:hover {
+  background-color: #a00014;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.filter-select-group select {
+  width: 140px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.7L146.2%20205.6%205.4%2069.7c-7.3-7.3-19-7.3-26.3%200-7.3%207.3-7.3%2019%200%2026.3l138.8%20138.8c7.3%207.3%2019%207.3%2026.3%200l138.8-138.8c7.3-7.3%207.3-19%200-26.3C306%2062.4%20294.3%2062.4%20287%2069.7z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .adote-search-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .input-with-icon,
+  .filter-select-group select {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adote-search-bar {
+    padding: 15px;
+  }
+
+  .input-with-icon,
+  .filter-select-group select {
+    width: 95%;
+  }
+}

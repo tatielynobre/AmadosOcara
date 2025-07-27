@@ -36,19 +36,26 @@ export default function Carousel() {
   return (
     <div className="historias-container">
       <div className="slide">
-        <button onClick={anterior} className="seta">&#8592;</button>
-        <img src={dados[index].imagem} alt={dados[index].nome} />
-        <div className="texto">
-          <h3>{dados[index].nome}</h3>
-          <p>{dados[index].texto}</p>
+        <button onClick={anterior} className="seta" aria-label="Anterior">&#8592;</button>
+        
+        <div className="conteudo-slide">
+          <img src={dados[index].imagem} alt={dados[index].nome} />
+          <div className="texto">
+            <h3>{dados[index].nome}</h3>
+            <p>{dados[index].texto}</p>
+          </div>
         </div>
-        <button onClick={proximo} className="seta">&#8594;</button>
+        
+        <button onClick={proximo} className="seta" aria-label="Próximo">&#8594;</button>
       </div>
 
-      
       <div className="pontos">
         {dados.map((_, i) => (
-          <span key={i} className={i === index ? 'ativo' : ''}></span>
+          <span 
+            key={i} 
+            className={i === index ? 'ativo' : ''}
+            onClick={() => setIndex(i)}
+          ></span>
         ))}
       </div>
     </div>

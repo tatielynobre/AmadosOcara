@@ -1,15 +1,15 @@
 import NavBar from '../components/navBar/navBar';
-import ParceirosDiv from '../components/parceiros/ParceirosDiv';
+import VerArtigo from '../components/artigos/verArtigo';
 import Footer from '../components/footer/Footer';
 
-function Parceiros() {
+function VerArtigoView() {
   return (
     <>
       <NavBar />
-      <ParceirosDiv />
+      <VerArtigo />
       <Footer />
     </>
   );
 }
 
-export default Parceiros;
+export default VerArtigoView;

@@ -1,32 +1,54 @@
-import './ParceirosDiv.css';
+import React from 'react';
 import img1 from '../../assets/img1.jpeg';
 import img2 from '../../assets/img2.jpeg';
-
-const parceiros = [
-  { nome: 'MundoPet', imagem: img1, descricao: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-  { nome: 'DogCare',  imagem: img2, descricao: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-  { nome: 'DogCare',  imagem: img2, descricao: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-  { nome: 'MundoPet', imagem: img1, descricao: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-];
+import './ParceirosDiv.css';
 
 export default function ParceirosDiv() {
   return (
-    <section className="parceiros">
-      <h2 className="titulo">Conheça nossos parceiros</h2>
-      <div className="cards">
-        {parceiros.map((p, i) => (
-          <div key={i} className="card">
-            <div className="img-box">
-              <img src={p.imagem} alt={p.nome} />
-            </div>
-            <h3 className="card-nome">{p.nome}</h3>
-            <p className="card-desc">{p.descricao}</p>
+    <div className="parceiros-bg">
+      <h1 className="parceiros-titulo">Conheça nossos parceiros</h1>
+      <div className="parceiros-cards">
+        <div className="parceiro-bloco">
+          <div className="parceiro-card">
+            <img src={img1} alt="Parceiro 1" className="parceiro-img" />
           </div>
-        ))}
+          <div className="descricao-parceiro">
+            <h2>MundoPet</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div className="parceiro-bloco">
+          <div className="parceiro-card">
+            <img src={img2} alt="Parceiro 2" className="parceiro-img" />
+          </div>
+          <div className="descricao-parceiro">
+            <h2>DogCare</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div className="parceiro-bloco">
+          <div className="parceiro-card">
+            <img src={img1} alt="Parceiro 3" className="parceiro-img" />
+          </div>
+          <div className="descricao-parceiro">
+          <h2>MundoPet</h2>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div className="parceiro-bloco">
+          <div className="parceiro-card">
+            <img src={img2} alt="Parceiro 4" className="parceiro-img" />
+          </div>
+          <div className="descricao-parceiro">
+            <h2>DogCare</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
       </div>
-      <div className="botao-container">
-        <button className="botao-parceiro">Quero ser parceiro</button>
-      </div>
-    </section>
+      <button 
+      className="parceiros-botao" 
+      onClick={() => window.open('https://forms.gle/cf2Sygef5LhMrozw6', '_blank')}
+        >Quero ser parceiro</button>
+    </div>
   );
 }
